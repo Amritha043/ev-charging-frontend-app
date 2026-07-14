@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
+import NavigationBar from './NavigationBar';
 
 const AddVehicle = () => {
     // Function part (state + handlers)
@@ -42,6 +43,7 @@ const readValue = () => {
 };
   return (
     <div>
+        <NavigationBar/>
 <div className="container py-5">
 
   <div className="text-center mb-5">

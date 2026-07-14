@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 
 const ViewVehicle = () => {
@@ -18,7 +19,7 @@ const ViewVehicle = () => {
     )
   return (
     <div>
-        
+       <NavigationBar/> 
       <div className="container py-5">
 
         <h2 className="text-center page-title mb-5">
