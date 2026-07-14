@@ -1,0 +1,109 @@
+/* Background */
+body {
+    background: linear-gradient(135deg, #eef7ff, #e8fff4);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #0b5ed7;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.page-title::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    margin: 10px auto 0;
+    background: linear-gradient(to right, #198754, #0d6efd);
+    border-radius: 20px;
+}
+
+/* Booking Card */
+.team-box {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+.team-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+}
+
+/* Card Header */
+.team-top {
+    background: linear-gradient(135deg, #198754, #0d6efd);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.team-top h5 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.team-top span {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.2);
+    font-size: 0.9rem;
+}
+
+/* Card Body */
+.team-info {
+    padding: 22px;
+}
+
+/* Info Rows */
+.team-info p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    border-left: 4px solid #198754;
+    transition: 0.3s;
+}
+
+.team-info p:hover {
+    background: #e9f7ef;
+    transform: translateX(4px);
+}
+
+.team-info strong {
+    color: #0d6efd;
+    min-width: 150px;
+}
+
+/* Responsive */
+@media (max-width:768px){
+
+    .page-title{
+        font-size:2rem;
+    }
+
+    .team-info p{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:5px;
+    }
+
+    .team-info strong{
+        min-width:auto;
+    }
+
+}
